@@ -5,4 +5,4 @@ RUN echo "{\"endpoint\": {\"username\": \"admin\", \"tenant_name\": \"benchmark\
 RUN rally deployment create --filename=existing.json --name=devstack
 RUN cat ~/.rally/openrc
 ENTRYPOINT ["/.rally/openrc"]
-RUN glance image list
+RUN glance image-list

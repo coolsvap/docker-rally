@@ -7,7 +7,7 @@ RUN apt-get update && \
                        libxml2-dev libxslt1-dev libssl-dev
                        
 RUN git clone https://github.com/stackforge/rally.git
-RUN cd ~/rally &&\
+RUN cd rally &&\
     ./install_rally.sh &&\
     apt-get -y remove libssl-dev libffi-dev python-dev libxml2-dev \
                       libxslt1-dev build-essential gcc-4.8 python3 && \

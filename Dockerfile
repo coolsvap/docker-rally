@@ -24,4 +24,4 @@ RUN cd rally &&\
 USER rally
 ENV HOME /home/rally
 WORKDIR /home/rally
-ENTRYPOINT ["/bin/bash", "-D", "FOREGROUND"]
+ENTRYPOINT ["/bin/bash"]

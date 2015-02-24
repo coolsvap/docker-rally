@@ -22,6 +22,6 @@ RUN cd rally &&\
     rally-manage db recreate
     
 USER rally
-CMD bash --login
+CMD /bin/bash
 ENV HOME /home/rally
 WORKDIR /home/rally

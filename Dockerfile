@@ -1,11 +1,13 @@
 FROM            ubuntu:14.04
 MAINTAINER      Swapnil Kulkarni "coolsvap@gmail.com"
 
-COPY . /tmp/rally
+
 RUN apt-get update && \
     apt-get -y install git python2.7 bash-completion python-dev libffi-dev \
-                       libxml2-dev libxslt1-dev libssl-dev &&\
-    cd /tmp/rally &&\
+                       libxml2-dev libxslt1-dev libssl-dev
+                       
+RUN git clone https://github.com/stackforge/rally.git
+RUN cd ~/rally &&\
     ./install_rally.sh &&\
     apt-get -y remove libssl-dev libffi-dev python-dev libxml2-dev \
                       libxslt1-dev build-essential gcc-4.8 python3 && \

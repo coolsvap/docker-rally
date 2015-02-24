@@ -18,7 +18,8 @@ RUN cd rally &&\
     rm -rf /var/lib/apt/lists/* &&\
     update-alternatives --install /usr/bin/python python /usr/bin/python2.7 10 &&\
     useradd -m rally &&\
-    ln -s /usr/share/doc/rally /home/rally/rally-docs
+    ln -s /usr/share/doc/rally /home/rally/rally-docs &&\
+    rally-manage db recreate
     
 USER rally
 CMD bash --login

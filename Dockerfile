@@ -16,3 +16,7 @@ RUN cd rally &&\
 
 ENV HOME /home/rally
 WORKDIR /home/rally
+RUN /usr/local/bin/rally deployment create --filename=/home/rally/deployment.json --name=deployment
+RUN /usr/local/bin/rally verify start
+RUN /usr/local/bin/rally verify results --html --output-file=results.html
+RUN /usr/local/bin/rally verify results --html --output-file=results.json

@@ -1,9 +1,0 @@
-{
-    "type": "ExistingCloud",
-    "auth_url": "http://10.3.9.65:5000/v2.0",
-    "admin": {
-        "username": "admin",
-        "password": "password",
-        "tenant_name": "admin"
-    }
-}

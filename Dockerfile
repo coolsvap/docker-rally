@@ -16,8 +16,8 @@ RUN cd rally &&\
 
 ENV HOME /home/rally
 WORKDIR /home/rally
-COPY init-rally.sh /home/rally/init-rally.sh
-RUN chmod 755 /home/rally/init-rally.sh
+COPY init-rally.sh /init-rally.sh
+RUN chmod 755 /init-rally.sh
 
-ENTRYPOINT ["/home/rally/init-rally.sh"]
+ENTRYPOINT ["/init-rally.sh"]
 

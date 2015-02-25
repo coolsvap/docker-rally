@@ -21,7 +21,7 @@ RUN cd rally &&\
     ln -s /usr/share/doc/rally /home/rally/rally-docs &&\
     rally-manage db recreate
     
-USER rally
 CMD chown rally:rally /home/rally
+USER rally
 ENV HOME /home/rally
 WORKDIR /home/rally

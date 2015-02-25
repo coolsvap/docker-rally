@@ -20,8 +20,7 @@ RUN cd rally &&\
     useradd -m rally &&\
     ln -s /usr/share/doc/rally /home/rally/rally-docs &&\
     rally-manage db recreate
-    
-CMD chown rally:rally /home/rally
-USER rally
+
+RUN mkdir /home/rally
 ENV HOME /home/rally
 WORKDIR /home/rally

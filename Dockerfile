@@ -19,5 +19,5 @@ WORKDIR /home/rally
 COPY init-rally.sh /home/rally/init-rally.sh
 RUN chmod 755 /home/rally/init-rally.sh
 
-ENTRYPOINT ["/home/rally/init-rally"]
+ENTRYPOINT ["/home/rally/init-rally.sh"]
 

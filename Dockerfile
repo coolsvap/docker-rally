@@ -22,6 +22,7 @@ RUN cd rally &&\
     rally-manage db recreate
     
 USER rally
+CMD chown rally:rally /home/rally
 ENV HOME /home/rally
 WORKDIR /home/rally
 ENTRYPOINT ["/bin/bash"]

@@ -8,7 +8,7 @@ Prerequisites:
 --------------
 - DevStack setup requires to have 1 VM/ BM machine with internet connectivity.
 - Setup a fresh supported Linux installation. (Ubuntu/Fedora/CentOs)
-- Install Git
+- Install git, docker
 
 Steps
 -----

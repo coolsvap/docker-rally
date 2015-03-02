@@ -16,7 +16,7 @@ Steps
 ```
 $ docker pull coolsvap/docker-rally:latest
 ```
-2. Create two directorie  for rally_home (for configuration files) and rally_db to backup rally database
+2. Create two directories  for rally_home (for configuration files) and rally_db to backup rally database
 ```
 $ mkdir rally_home rally_db
 ```

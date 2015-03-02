@@ -22,6 +22,7 @@ $ mkdir rally_home rally_db
 ```
 3. Create a file deployment.json in rally_home directory with following details
 
+```
 {
 "type": "ExistingCloud",
 "auth_url": "keystone-auth-url",
@@ -31,6 +32,7 @@ $ mkdir rally_home rally_db
     "tenant_name": "tenant-name"
 }
 }
+```
 
 Replace the values for keystone-auth-url, username, password, and tenant-name as per deployment.
 

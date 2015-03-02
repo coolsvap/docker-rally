@@ -20,10 +20,10 @@ $ docker pull coolsvap/docker-rally:latest
 ```
 $ mkdir rally_home rally_db
 ```
-3. Run the container with following command
+3. Run the container with following command, provide path to rally_home and rally_db directories created in previous command
 
 ```
-$ docker run ~/rally_home:/home/rally -v ~/rally_db:/var/lib/rally/database coolsvap/docker-rally:latest
+$ docker run [PATH to rally_home]:/home/rally -v [PATH to rally_home]:/var/lib/rally/database coolsvap/docker-rally:latest
 ```
 
 4. The container will run and provide you the tempest test results in rally_home directory.

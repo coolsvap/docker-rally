@@ -1,5 +1,5 @@
 FROM            ubuntu:14.04
-MAINTAINER      Swapnil Kulkarni "coolsvap@gmail.com"
+MAINTAINER      Swapnil Kulkarni "me@coolsvap.net"
 
 
 RUN apt-get update && \

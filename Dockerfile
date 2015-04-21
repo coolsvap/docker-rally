@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get -y install git python2.7 bash-completion python-dev libffi-dev \
                        libxml2-dev libxslt1-dev libssl-dev
-RUN git clone https://github.com/stackforge/rally.git
+RUN git clone https://github.com/openstack/rally.git
 RUN cd rally &&\
     ./install_rally.sh &&\
     update-alternatives --install /usr/bin/python python /usr/bin/python2.7 10 &&\

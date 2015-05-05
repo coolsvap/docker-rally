@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script to initialize the rally container and get results
 
 /usr/local/bin/rally deployment create --filename=/home/rally/deployment.json --name=deployment
 /usr/local/bin/rally verify start

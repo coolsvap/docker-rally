@@ -1,10 +1,10 @@
-FROM            centos
+ FROM            centos
 MAINTAINER      Swapnil Kulkarni "me@coolsvap.net"
 
 
 RUN yum update -y && \
     yum -y install git python2.7 bash-completion python-devel libffi-devel \
-                       libxml2-devel libxslt1-devel libssl-devel
+                       libxml2-devel libxslt1-devel libssl-devel build-essential libpq-devel wget python-pip
 RUN git clone https://github.com/openstack/rally.git
 RUN cd rally &&\
     ./install_rally.sh &&\

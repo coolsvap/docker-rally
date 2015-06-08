@@ -19,4 +19,3 @@ ADD https://raw.githubusercontent.com/svashu/docker-rally/master/scripts/init-ra
 RUN chmod 755 /init-rally.sh
 
 ENTRYPOINT ["/init-rally.sh"]
-

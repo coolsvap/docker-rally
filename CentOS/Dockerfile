@@ -2,6 +2,7 @@ FROM            centos:7
 MAINTAINER      Swapnil Kulkarni "me@coolsvap.net"
 
 
+RUN rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 RUN yum update -y && \
     yum -y install git python2.7 bash-completion python-devel libffi-devel \
                        libxml2-devel libxslt1-devel libssl-devel build-essential libpq-devel wget python-pip gcc openssl-devel gmp-devel libxslt-devel postgresql-devel

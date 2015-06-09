@@ -4,7 +4,7 @@ MAINTAINER      Swapnil Kulkarni "me@coolsvap.net"
 
 RUN yum update -y && \
     yum -y install git python-devel bash-completion python-devel libffi-devel \
-                       libxml2-devel libxslt1-devel libssl-devel
+                       libxml2-devel libxslt-devel libssl-devel
 RUN git clone https://github.com/openstack/rally.git
 RUN cd rally &&\
     ./install_rally.sh &&\

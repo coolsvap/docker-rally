@@ -4,7 +4,7 @@ MAINTAINER      Swapnil Kulkarni "me@coolsvap.net"
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get -y install git python2.7 bash-completion python-dev libffi-dev \
+    apt-get -y install git python-dev bash-completion python-dev libffi-dev \
                        libxml2-dev libxslt1-dev libssl-dev build-essential libpq-dev wget python-pip
 RUN git clone https://github.com/openstack/rally.git
 RUN cd rally &&\

@@ -3,7 +3,7 @@ MAINTAINER      Swapnil Kulkarni "me@coolsvap.net"
 
 
 RUN yum update -y && \
-    yum -y install git python2.7 bash-completion python-devel libffi-devel \
+    yum -y install git python-devel bash-completion python-devel libffi-devel \
                        libxml2-devel libxslt1-devel openssl-devel gtk+-devel build-essential libpq-devel wget python-pip gcc openssl-devel gmp-devel libxslt-devel postgresql-devel
 
 RUN git clone https://github.com/openstack/rally.git
